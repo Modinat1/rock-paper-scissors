@@ -1,0 +1,83 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color:  rgb(128, 71, 128);
+    color: #fff;
+}
+header{
+    background-color: white;
+    color: rgb(92, 86, 86);
+    text-align: center;
+    padding: 10px;
+}
+.container{
+    box-shadow: 0 2px 5px black;
+    width: 500px;
+    padding: 20px;
+    margin: 50px auto;
+    text-align: center;
+}
+#user{
+    font-size: 30px;
+}
+#comp{
+    font-size: 30px;
+}
+.score-board{
+    position: relative;
+    border: 1px solid white;
+    width: 200px;
+    padding: 50px;
+    margin: 20px auto;
+}
+.user-score{
+    background-color: rgb(216, 91, 91);
+    position: absolute;
+    left: -25px;
+    top: 40%;
+    padding: 10px;
+}
+.computer-score{
+    background-color: rgb(216, 91, 91);
+    position: absolute;
+    right: -25px;
+    top: 40%;
+    padding: 10px;
+}
+.game-icons{
+    margin-top: 20px;
+}
+.game-icons i{
+   color: rgb(216, 91, 91);
+    font-size: 50px;
+    border: 2px solid white;
+    border-radius: 50%;
+    margin-right: 10px;
+    padding: 10px;
+    transition: all 0.2s ease;
+}
+.game-icons i:hover{
+    background-color: rgb(65, 7, 65);
+    cursor: pointer;
+}
+.win-green{
+    border: 2px solid green;
+    box-shadow: 0 0 20px green;
+}
+.red-loss{
+    border: 2px solid red;
+    box-shadow: 0 0 20px red;
+}
+.gray-draw{
+    border: 2px solid gray;
+    box-shadow: 0 0 20px gray;
+}
+
+@media(max-width: 600px){
+    .container{
+        width: 350px;
+    }
+}
